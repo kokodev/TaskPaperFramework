@@ -1,0 +1,18 @@
+Project 1: @projectTag @Uppercase
+    - Task 1-1 @tagA @tagB @tagC(123)
+        TaskProject:
+            - TaskProject Task
+        - Task 1-1.1
+    - Task 1-2
+        Note for a task 1-2
+    - Task 1-3
+        TaskProject:
+            - TaskProject Task
+    - Task 1-4 with due date @due(2018-03-21)
+    - Task 1-5 task with a due date @due(2018-03-26)
+    - Task 1-6 @done
+
+    Subproject 1-1:
+        - Task 1-1-1 @due(2018-03-23)
+        - Task 1-1-2
+        - Task 1-1-4 @done

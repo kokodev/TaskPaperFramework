@@ -1,0 +1,49 @@
+Project 1: @tagProjectTag @lowercase @Uppercase
+	- Task 1-1 @tagA @tagB(123, 456) @tagC(123)
+		TaskProject:
+			- TaskProject Task
+		- Task 1-1.1
+	- Task 1-2 @lowercase
+		Note for a task 1-2
+	- Task 1-3 @Uppercase
+		TaskProject:
+			- TaskProject Task
+	- Task 1-4 with due date @due(2018-03-21)
+	- Task 1-5 task with a due date @due(2018-03-26)
+	- Task 1-6 @done
+	
+	Subproject 1-1:
+		- Task 1-1-1 @due(2018-03-23)
+		- Task 1-1-2
+		- Task 1-1-4 @done
+
+Toplevel Note
+
+Another Toplevel Note
+	Including a subnote
+
+- Toplevel Task
+
+Project 2:
+	- Task 2-1
+	- Task 2-2
+	- Task 2-3 @done
+	- Task 2-4 @done
+	
+	Subproject 2-1:
+		- Task 2-1-1 @tagA
+		- Task 2-1-2 @tagB
+		- Task 2-1-3 @tagC
+	
+	Subproject 2-2:
+		- Task 2-2-1 @tagA(withValue)
+		- Task 2-2-2 @tagB(alsoWithValue)
+			Note for task 2-2-2
+		- Task 2-2-3 @tagC
+
+Empty Project 3: @due(2018-04-05)
+
+Empty Project 4:
+
+Searches:
+	Due @search(@due or @daily except @done)

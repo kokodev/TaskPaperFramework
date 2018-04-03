@@ -1,0 +1,3 @@
+[submodule "src/lib/BirchOutline"]
+	path = src/lib/BirchOutline
+	url = https://github.com/kokodev/BirchOutline.git

@@ -1,0 +1,895 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AE4341FE20736664008DDC6F /* TaskPaper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE4341F420736664008DDC6F /* TaskPaper.framework */; };
+		AE43420520736664008DDC6F /* TaskPaperFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = AE4341F720736664008DDC6F /* TaskPaperFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AE43421720736845008DDC6F /* TaskPaperDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE43420F20736844008DDC6F /* TaskPaperDocument.swift */; };
+		AE43421820736845008DDC6F /* TaskPaperDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE43420F20736844008DDC6F /* TaskPaperDocument.swift */; };
+		AE43421920736845008DDC6F /* TaskPaperSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE43421020736844008DDC6F /* TaskPaperSearch.swift */; };
+		AE43421A20736845008DDC6F /* TaskPaperSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE43421020736844008DDC6F /* TaskPaperSearch.swift */; };
+		AE43421B20736845008DDC6F /* TaskPaperTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE43421120736845008DDC6F /* TaskPaperTag.swift */; };
+		AE43421C20736845008DDC6F /* TaskPaperTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE43421120736845008DDC6F /* TaskPaperTag.swift */; };
+		AE43421D20736845008DDC6F /* TaskPaperNote.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE43421220736845008DDC6F /* TaskPaperNote.swift */; };
+		AE43421E20736845008DDC6F /* TaskPaperNote.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE43421220736845008DDC6F /* TaskPaperNote.swift */; };
+		AE43421F20736845008DDC6F /* TaskPaperElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE43421320736845008DDC6F /* TaskPaperElement.swift */; };
+		AE43422020736845008DDC6F /* TaskPaperElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE43421320736845008DDC6F /* TaskPaperElement.swift */; };
+		AE43422120736845008DDC6F /* TaskPaperTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE43421420736845008DDC6F /* TaskPaperTask.swift */; };
+		AE43422220736845008DDC6F /* TaskPaperTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE43421420736845008DDC6F /* TaskPaperTask.swift */; };
+		AE43422320736845008DDC6F /* TaskPaperProject.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE43421520736845008DDC6F /* TaskPaperProject.swift */; };
+		AE43422420736845008DDC6F /* TaskPaperProject.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE43421520736845008DDC6F /* TaskPaperProject.swift */; };
+		AE43422520736845008DDC6F /* TaskPaperGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE43421620736845008DDC6F /* TaskPaperGenerator.swift */; };
+		AE43422620736845008DDC6F /* TaskPaperGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE43421620736845008DDC6F /* TaskPaperGenerator.swift */; };
+		AE43422C2073687C008DDC6F /* TaskPaperDocumentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4342272073687C008DDC6F /* TaskPaperDocumentTests.swift */; };
+		AE43422D2073687C008DDC6F /* FullDocument.taskpaper in Resources */ = {isa = PBXBuildFile; fileRef = AE4342292073687C008DDC6F /* FullDocument.taskpaper */; };
+		AE43422E2073687C008DDC6F /* SingleProject.taskpaper in Resources */ = {isa = PBXBuildFile; fileRef = AE43422A2073687C008DDC6F /* SingleProject.taskpaper */; };
+		AE43422F2073687C008DDC6F /* TaskPaperElementTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE43422B2073687C008DDC6F /* TaskPaperElementTests.swift */; };
+		AE43425020741A39008DDC6F /* TaskPaperDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE43420F20736844008DDC6F /* TaskPaperDocument.swift */; };
+		AE43425120741A39008DDC6F /* TaskPaperElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE43421320736845008DDC6F /* TaskPaperElement.swift */; };
+		AE43425220741A39008DDC6F /* TaskPaperGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE43421620736845008DDC6F /* TaskPaperGenerator.swift */; };
+		AE43425320741A39008DDC6F /* TaskPaperNote.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE43421220736845008DDC6F /* TaskPaperNote.swift */; };
+		AE43425420741A39008DDC6F /* TaskPaperProject.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE43421520736845008DDC6F /* TaskPaperProject.swift */; };
+		AE43425520741A39008DDC6F /* TaskPaperSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE43421020736844008DDC6F /* TaskPaperSearch.swift */; };
+		AE43425620741A39008DDC6F /* TaskPaperTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE43421120736845008DDC6F /* TaskPaperTag.swift */; };
+		AE43425720741A39008DDC6F /* TaskPaperTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE43421420736845008DDC6F /* TaskPaperTask.swift */; };
+		AE43425B20741A88008DDC6F /* BirchOutline.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE4342392074151A008DDC6F /* BirchOutline.framework */; };
+		AE43428520741F78008DDC6F /* TaskPaper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE434248207419E1008DDC6F /* TaskPaper.framework */; };
+		AE43428B20741F99008DDC6F /* FullDocument.taskpaper in Resources */ = {isa = PBXBuildFile; fileRef = AE4342292073687C008DDC6F /* FullDocument.taskpaper */; };
+		AE43428C20741F99008DDC6F /* SingleProject.taskpaper in Resources */ = {isa = PBXBuildFile; fileRef = AE43422A2073687C008DDC6F /* SingleProject.taskpaper */; };
+		AE43428D20741F99008DDC6F /* TaskPaperDocumentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4342272073687C008DDC6F /* TaskPaperDocumentTests.swift */; };
+		AE43428E20741F99008DDC6F /* TaskPaperElementTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE43422B2073687C008DDC6F /* TaskPaperElementTests.swift */; };
+		AEECB3CF2074217C00748922 /* TaskPaperFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = AE4341F720736664008DDC6F /* TaskPaperFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AE4341FF20736664008DDC6F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AE4341EB20736664008DDC6F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AE4341F320736664008DDC6F;
+			remoteInfo = TaskPaper;
+		};
+		AE4342382074151A008DDC6F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AE4342312074151A008DDC6F /* BirchOutline.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 436C0D701D1D56D50089FA7A;
+			remoteInfo = BirchOutline;
+		};
+		AE43423A2074151A008DDC6F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AE4342312074151A008DDC6F /* BirchOutline.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 436C0D7A1D1D56D50089FA7A;
+			remoteInfo = BirchOutlineTests;
+		};
+		AE43423C2074151A008DDC6F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AE4342312074151A008DDC6F /* BirchOutline.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 436C0DB21D1D63630089FA7A;
+			remoteInfo = BirchOutlineiOS;
+		};
+		AE43423E2074151A008DDC6F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AE4342312074151A008DDC6F /* BirchOutline.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 436C0DBB1D1D63630089FA7A;
+			remoteInfo = BirchOutlineiOSTests;
+		};
+		AE43424020741530008DDC6F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AE4342312074151A008DDC6F /* BirchOutline.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 436C0DB11D1D63630089FA7A;
+			remoteInfo = BirchOutlineiOS;
+		};
+		AE43425920741A81008DDC6F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AE4342312074151A008DDC6F /* BirchOutline.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 436C0D6F1D1D56D50089FA7A;
+			remoteInfo = BirchOutline;
+		};
+		AE43428620741F78008DDC6F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AE4341EB20736664008DDC6F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AE434247207419E1008DDC6F;
+			remoteInfo = "TaskPaper-macOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AE4341F420736664008DDC6F /* TaskPaper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TaskPaper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE4341F720736664008DDC6F /* TaskPaperFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TaskPaperFramework.h; sourceTree = "<group>"; };
+		AE4341F820736664008DDC6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE4341FD20736664008DDC6F /* TaskPaperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TaskPaperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE43420F20736844008DDC6F /* TaskPaperDocument.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskPaperDocument.swift; sourceTree = "<group>"; };
+		AE43421020736844008DDC6F /* TaskPaperSearch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskPaperSearch.swift; sourceTree = "<group>"; };
+		AE43421120736845008DDC6F /* TaskPaperTag.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskPaperTag.swift; sourceTree = "<group>"; };
+		AE43421220736845008DDC6F /* TaskPaperNote.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskPaperNote.swift; sourceTree = "<group>"; };
+		AE43421320736845008DDC6F /* TaskPaperElement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskPaperElement.swift; sourceTree = "<group>"; };
+		AE43421420736845008DDC6F /* TaskPaperTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskPaperTask.swift; sourceTree = "<group>"; };
+		AE43421520736845008DDC6F /* TaskPaperProject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskPaperProject.swift; sourceTree = "<group>"; };
+		AE43421620736845008DDC6F /* TaskPaperGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskPaperGenerator.swift; sourceTree = "<group>"; };
+		AE4342272073687C008DDC6F /* TaskPaperDocumentTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskPaperDocumentTests.swift; sourceTree = "<group>"; };
+		AE4342292073687C008DDC6F /* FullDocument.taskpaper */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = FullDocument.taskpaper; sourceTree = "<group>"; };
+		AE43422A2073687C008DDC6F /* SingleProject.taskpaper */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SingleProject.taskpaper; sourceTree = "<group>"; };
+		AE43422B2073687C008DDC6F /* TaskPaperElementTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskPaperElementTests.swift; sourceTree = "<group>"; };
+		AE4342312074151A008DDC6F /* BirchOutline.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = BirchOutline.xcodeproj; path = lib/BirchOutline/BirchOutline.xcodeproj; sourceTree = "<group>"; };
+		AE434248207419E1008DDC6F /* TaskPaper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TaskPaper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE43427120741C86008DDC6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE43428020741F77008DDC6F /* TaskPaperTests-macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TaskPaperTests-macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AE4341F020736664008DDC6F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE4341FA20736664008DDC6F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE4341FE20736664008DDC6F /* TaskPaper.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE434244207419E1008DDC6F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE43425B20741A88008DDC6F /* BirchOutline.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE43427D20741F77008DDC6F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE43428520741F78008DDC6F /* TaskPaper.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AE4341EA20736664008DDC6F = {
+			isa = PBXGroup;
+			children = (
+				AE4341F620736664008DDC6F /* TaskPaperFramework */,
+				AE43420120736664008DDC6F /* TaskPaperFrameworkTests */,
+				AE43423020741480008DDC6F /* Frameworks */,
+				AE4341F520736664008DDC6F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AE4341F520736664008DDC6F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AE4341F420736664008DDC6F /* TaskPaper.framework */,
+				AE4341FD20736664008DDC6F /* TaskPaperTests.xctest */,
+				AE434248207419E1008DDC6F /* TaskPaper.framework */,
+				AE43428020741F77008DDC6F /* TaskPaperTests-macOS.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AE4341F620736664008DDC6F /* TaskPaperFramework */ = {
+			isa = PBXGroup;
+			children = (
+				AE43420F20736844008DDC6F /* TaskPaperDocument.swift */,
+				AE43421320736845008DDC6F /* TaskPaperElement.swift */,
+				AE43421620736845008DDC6F /* TaskPaperGenerator.swift */,
+				AE43421220736845008DDC6F /* TaskPaperNote.swift */,
+				AE43421520736845008DDC6F /* TaskPaperProject.swift */,
+				AE43421020736844008DDC6F /* TaskPaperSearch.swift */,
+				AE43421120736845008DDC6F /* TaskPaperTag.swift */,
+				AE43421420736845008DDC6F /* TaskPaperTask.swift */,
+				AE4341F720736664008DDC6F /* TaskPaperFramework.h */,
+				AE4341F820736664008DDC6F /* Info.plist */,
+			);
+			path = TaskPaperFramework;
+			sourceTree = "<group>";
+		};
+		AE43420120736664008DDC6F /* TaskPaperFrameworkTests */ = {
+			isa = PBXGroup;
+			children = (
+				AE4342282073687C008DDC6F /* Data */,
+				AE4342272073687C008DDC6F /* TaskPaperDocumentTests.swift */,
+				AE43422B2073687C008DDC6F /* TaskPaperElementTests.swift */,
+				AE43427120741C86008DDC6F /* Info.plist */,
+			);
+			path = TaskPaperFrameworkTests;
+			sourceTree = "<group>";
+		};
+		AE4342282073687C008DDC6F /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				AE4342292073687C008DDC6F /* FullDocument.taskpaper */,
+				AE43422A2073687C008DDC6F /* SingleProject.taskpaper */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		AE43423020741480008DDC6F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AE4342312074151A008DDC6F /* BirchOutline.xcodeproj */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AE4342322074151A008DDC6F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AE4342392074151A008DDC6F /* BirchOutline.framework */,
+				AE43423B2074151A008DDC6F /* BirchOutlineTests.xctest */,
+				AE43423D2074151A008DDC6F /* BirchOutline.framework */,
+				AE43423F2074151A008DDC6F /* BirchOutlineiOSTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		AE4341F120736664008DDC6F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE43420520736664008DDC6F /* TaskPaperFramework.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE434245207419E1008DDC6F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AEECB3CF2074217C00748922 /* TaskPaperFramework.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		AE4341F320736664008DDC6F /* TaskPaper-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE43420820736664008DDC6F /* Build configuration list for PBXNativeTarget "TaskPaper-iOS" */;
+			buildPhases = (
+				AE4341EF20736664008DDC6F /* Sources */,
+				AE4341F020736664008DDC6F /* Frameworks */,
+				AE4341F120736664008DDC6F /* Headers */,
+				AE4341F220736664008DDC6F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AE43424120741530008DDC6F /* PBXTargetDependency */,
+			);
+			name = "TaskPaper-iOS";
+			productName = TaskPaper;
+			productReference = AE4341F420736664008DDC6F /* TaskPaper.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		AE4341FC20736664008DDC6F /* TaskPaperTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE43420B20736664008DDC6F /* Build configuration list for PBXNativeTarget "TaskPaperTests" */;
+			buildPhases = (
+				AE4341F920736664008DDC6F /* Sources */,
+				AE4341FA20736664008DDC6F /* Frameworks */,
+				AE4341FB20736664008DDC6F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AE43420020736664008DDC6F /* PBXTargetDependency */,
+			);
+			name = TaskPaperTests;
+			productName = TaskPaperTests;
+			productReference = AE4341FD20736664008DDC6F /* TaskPaperTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AE434247207419E1008DDC6F /* TaskPaper-macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE43424D207419E1008DDC6F /* Build configuration list for PBXNativeTarget "TaskPaper-macOS" */;
+			buildPhases = (
+				AE434243207419E1008DDC6F /* Sources */,
+				AE434244207419E1008DDC6F /* Frameworks */,
+				AE434245207419E1008DDC6F /* Headers */,
+				AE434246207419E1008DDC6F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AE43425A20741A81008DDC6F /* PBXTargetDependency */,
+			);
+			name = "TaskPaper-macOS";
+			productName = "TaskPaper-macOS";
+			productReference = AE434248207419E1008DDC6F /* TaskPaper.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		AE43427F20741F77008DDC6F /* TaskPaperTests-macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE43428820741F78008DDC6F /* Build configuration list for PBXNativeTarget "TaskPaperTests-macOS" */;
+			buildPhases = (
+				AE43427C20741F77008DDC6F /* Sources */,
+				AE43427D20741F77008DDC6F /* Frameworks */,
+				AE43427E20741F77008DDC6F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AE43428720741F78008DDC6F /* PBXTargetDependency */,
+			);
+			name = "TaskPaperTests-macOS";
+			productName = "TaskPaper-macOSTests";
+			productReference = AE43428020741F77008DDC6F /* TaskPaperTests-macOS.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AE4341EB20736664008DDC6F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = kokodev.de;
+				TargetAttributes = {
+					AE4341F320736664008DDC6F = {
+						CreatedOnToolsVersion = 9.3;
+						LastSwiftMigration = 0930;
+					};
+					AE4341FC20736664008DDC6F = {
+						CreatedOnToolsVersion = 9.3;
+						LastSwiftMigration = 0930;
+					};
+					AE434247207419E1008DDC6F = {
+						CreatedOnToolsVersion = 9.3;
+					};
+					AE43427F20741F77008DDC6F = {
+						CreatedOnToolsVersion = 9.3;
+					};
+				};
+			};
+			buildConfigurationList = AE4341EE20736664008DDC6F /* Build configuration list for PBXProject "TaskPaperFramework" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = AE4341EA20736664008DDC6F;
+			productRefGroup = AE4341F520736664008DDC6F /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = AE4342322074151A008DDC6F /* Products */;
+					ProjectRef = AE4342312074151A008DDC6F /* BirchOutline.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				AE4341F320736664008DDC6F /* TaskPaper-iOS */,
+				AE4341FC20736664008DDC6F /* TaskPaperTests */,
+				AE434247207419E1008DDC6F /* TaskPaper-macOS */,
+				AE43427F20741F77008DDC6F /* TaskPaperTests-macOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		AE4342392074151A008DDC6F /* BirchOutline.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = BirchOutline.framework;
+			remoteRef = AE4342382074151A008DDC6F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		AE43423B2074151A008DDC6F /* BirchOutlineTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = BirchOutlineTests.xctest;
+			remoteRef = AE43423A2074151A008DDC6F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		AE43423D2074151A008DDC6F /* BirchOutline.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = BirchOutline.framework;
+			remoteRef = AE43423C2074151A008DDC6F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		AE43423F2074151A008DDC6F /* BirchOutlineiOSTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = BirchOutlineiOSTests.xctest;
+			remoteRef = AE43423E2074151A008DDC6F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AE4341F220736664008DDC6F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE4341FB20736664008DDC6F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE43422D2073687C008DDC6F /* FullDocument.taskpaper in Resources */,
+				AE43422E2073687C008DDC6F /* SingleProject.taskpaper in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE434246207419E1008DDC6F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE43427E20741F77008DDC6F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE43428B20741F99008DDC6F /* FullDocument.taskpaper in Resources */,
+				AE43428C20741F99008DDC6F /* SingleProject.taskpaper in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AE4341EF20736664008DDC6F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE43422120736845008DDC6F /* TaskPaperTask.swift in Sources */,
+				AE43421B20736845008DDC6F /* TaskPaperTag.swift in Sources */,
+				AE43421F20736845008DDC6F /* TaskPaperElement.swift in Sources */,
+				AE43421720736845008DDC6F /* TaskPaperDocument.swift in Sources */,
+				AE43422320736845008DDC6F /* TaskPaperProject.swift in Sources */,
+				AE43422520736845008DDC6F /* TaskPaperGenerator.swift in Sources */,
+				AE43421920736845008DDC6F /* TaskPaperSearch.swift in Sources */,
+				AE43421D20736845008DDC6F /* TaskPaperNote.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE4341F920736664008DDC6F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE43422F2073687C008DDC6F /* TaskPaperElementTests.swift in Sources */,
+				AE43422220736845008DDC6F /* TaskPaperTask.swift in Sources */,
+				AE43421C20736845008DDC6F /* TaskPaperTag.swift in Sources */,
+				AE43422020736845008DDC6F /* TaskPaperElement.swift in Sources */,
+				AE43421820736845008DDC6F /* TaskPaperDocument.swift in Sources */,
+				AE43422C2073687C008DDC6F /* TaskPaperDocumentTests.swift in Sources */,
+				AE43422420736845008DDC6F /* TaskPaperProject.swift in Sources */,
+				AE43422620736845008DDC6F /* TaskPaperGenerator.swift in Sources */,
+				AE43421A20736845008DDC6F /* TaskPaperSearch.swift in Sources */,
+				AE43421E20736845008DDC6F /* TaskPaperNote.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE434243207419E1008DDC6F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE43425120741A39008DDC6F /* TaskPaperElement.swift in Sources */,
+				AE43425520741A39008DDC6F /* TaskPaperSearch.swift in Sources */,
+				AE43425220741A39008DDC6F /* TaskPaperGenerator.swift in Sources */,
+				AE43425420741A39008DDC6F /* TaskPaperProject.swift in Sources */,
+				AE43425720741A39008DDC6F /* TaskPaperTask.swift in Sources */,
+				AE43425020741A39008DDC6F /* TaskPaperDocument.swift in Sources */,
+				AE43425620741A39008DDC6F /* TaskPaperTag.swift in Sources */,
+				AE43425320741A39008DDC6F /* TaskPaperNote.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE43427C20741F77008DDC6F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE43428E20741F99008DDC6F /* TaskPaperElementTests.swift in Sources */,
+				AE43428D20741F99008DDC6F /* TaskPaperDocumentTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AE43420020736664008DDC6F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AE4341F320736664008DDC6F /* TaskPaper-iOS */;
+			targetProxy = AE4341FF20736664008DDC6F /* PBXContainerItemProxy */;
+		};
+		AE43424120741530008DDC6F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = BirchOutlineiOS;
+			targetProxy = AE43424020741530008DDC6F /* PBXContainerItemProxy */;
+		};
+		AE43425A20741A81008DDC6F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = BirchOutline;
+			targetProxy = AE43425920741A81008DDC6F /* PBXContainerItemProxy */;
+		};
+		AE43428720741F78008DDC6F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AE434247207419E1008DDC6F /* TaskPaper-macOS */;
+			targetProxy = AE43428620741F78008DDC6F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		AE43420620736664008DDC6F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		AE43420720736664008DDC6F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		AE43420920736664008DDC6F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = TaskPaperFramework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = de.kokodev.TaskPaper;
+				PRODUCT_MODULE_NAME = "$(PRODUCT_NAME:c99extidentifier)";
+				PRODUCT_NAME = TaskPaper;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AE43420A20736664008DDC6F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = TaskPaperFramework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = de.kokodev.TaskPaper;
+				PRODUCT_MODULE_NAME = "$(PRODUCT_NAME:c99extidentifier)";
+				PRODUCT_NAME = TaskPaper;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		AE43420C20736664008DDC6F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = TaskPaperFrameworkTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = de.kokodev.TaskPaperTests.ios;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "arm64 armv7 armv7s x86_64 i386";
+			};
+			name = Debug;
+		};
+		AE43420D20736664008DDC6F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = TaskPaperFrameworkTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = de.kokodev.TaskPaperTests.ios;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "arm64 armv7 armv7s x86_64 i386";
+			};
+			name = Release;
+		};
+		AE43424E207419E1008DDC6F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = TaskPaperFramework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = de.kokodev.TaskPaper;
+				PRODUCT_MODULE_NAME = "$(PRODUCT_NAME:c99extidentifier)";
+				PRODUCT_NAME = TaskPaper;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		AE43424F207419E1008DDC6F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = TaskPaperFramework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = de.kokodev.TaskPaper;
+				PRODUCT_MODULE_NAME = "$(PRODUCT_NAME:c99extidentifier)";
+				PRODUCT_NAME = TaskPaper;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		AE43428920741F78008DDC6F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = TaskPaperFrameworkTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = de.kokodev.TaskPaperTests.macOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		AE43428A20741F78008DDC6F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = TaskPaperFrameworkTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = de.kokodev.TaskPaperTests.macOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AE4341EE20736664008DDC6F /* Build configuration list for PBXProject "TaskPaperFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE43420620736664008DDC6F /* Debug */,
+				AE43420720736664008DDC6F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE43420820736664008DDC6F /* Build configuration list for PBXNativeTarget "TaskPaper-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE43420920736664008DDC6F /* Debug */,
+				AE43420A20736664008DDC6F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE43420B20736664008DDC6F /* Build configuration list for PBXNativeTarget "TaskPaperTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE43420C20736664008DDC6F /* Debug */,
+				AE43420D20736664008DDC6F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE43424D207419E1008DDC6F /* Build configuration list for PBXNativeTarget "TaskPaper-macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE43424E207419E1008DDC6F /* Debug */,
+				AE43424F207419E1008DDC6F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE43428820741F78008DDC6F /* Build configuration list for PBXNativeTarget "TaskPaperTests-macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE43428920741F78008DDC6F /* Debug */,
+				AE43428A20741F78008DDC6F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AE4341EB20736664008DDC6F /* Project object */;
+}
