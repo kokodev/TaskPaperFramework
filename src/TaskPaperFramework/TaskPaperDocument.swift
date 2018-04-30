@@ -9,9 +9,9 @@
 import Foundation
 import BirchOutline
 
-typealias EmptyCompletionHandler = ()->()
+public typealias EmptyCompletionHandler = ()->()
 
-class TaskPaperDocument {
+public class TaskPaperDocument {
     
     private(set) var projects = [TaskPaperProject]()
     private(set) var tasks = [TaskPaperTask]()
@@ -27,7 +27,7 @@ class TaskPaperDocument {
         documentPath = taskPaperPath
     }
     
-    func load(completion: EmptyCompletionHandler?) {
+    public func load(completion: EmptyCompletionHandler?) {
         projects.removeAll()
         documentQueue.async {
             self.loadOutline(completion)

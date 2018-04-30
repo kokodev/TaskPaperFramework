@@ -9,9 +9,9 @@
 import Foundation
 import BirchOutline
 
-typealias TaskPaperGeneratorCallback = (([TaskPaperProject], [TaskPaperTask], [TaskPaperNote], [TaskPaperSearch])->())
+public typealias TaskPaperGeneratorCallback = (([TaskPaperProject], [TaskPaperTask], [TaskPaperNote], [TaskPaperSearch])->())
 
-class TaskPaperGenerator {
+public class TaskPaperGenerator {
     
     private struct Constants {
         static let projectSearches = "Searches"
@@ -34,7 +34,7 @@ class TaskPaperGenerator {
     private(set) var notes = [TaskPaperNote]()
     private(set) var searches = [TaskPaperSearch]()
 
-    func generateTaskPaper(from outline: OutlineType, completion: @escaping TaskPaperGeneratorCallback) {
+    public func generateTaskPaper(from outline: OutlineType, completion: @escaping TaskPaperGeneratorCallback) {
         let items = outline.items
         var itemIterator = items.makeIterator()
         collectObjects(forElement: nil, withIterator: &itemIterator)

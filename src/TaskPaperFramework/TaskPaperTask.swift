@@ -9,4 +9,4 @@
 import Foundation
 import BirchOutline
 
-class TaskPaperTask: TaskPaperElement {}
+public class TaskPaperTask: TaskPaperElement {}

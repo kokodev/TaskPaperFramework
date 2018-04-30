@@ -9,7 +9,7 @@
 import Foundation
 import BirchOutline
 
-protocol TaskPaperElementProtocol {
+public protocol TaskPaperElementProtocol {
 
     init(_ title: String)
     init(_ item: ItemType)
@@ -31,30 +31,30 @@ protocol TaskPaperElementProtocol {
 
 }
 
-class TaskPaperElement: TaskPaperElementProtocol {
+public class TaskPaperElement: TaskPaperElementProtocol {
         
     private let item: ItemType
     
-    var title: String {
+    public var title: String {
         get {
             return item.bodyContent
         }
     }
     
-    required init(_ title: String) {
+    public required init(_ title: String) {
         let outline = BirchOutline.createTaskPaperOutline(nil)
         item = outline.createItem(title)
     }
     
-    required init(_ item: ItemType) {
+    public required init(_ item: ItemType) {
         self.item = item
     }
     
     // MARK: - Tags
     
-    private(set) var tags = [TaskPaperTag]()
+    private(set) public var tags = [TaskPaperTag]()
     
-    func addTag(_ tag: TaskPaperTag) {
+    public func addTag(_ tag: TaskPaperTag) {
         tags.append(tag)
         tags.sort { (tag1, tag2) -> Bool in
             return tag1.title.compare(tag2.title) == ComparisonResult.orderedAscending
@@ -63,13 +63,13 @@ class TaskPaperElement: TaskPaperElementProtocol {
 
     // MARK: - Subprojects
     
-    private(set) var projects = [TaskPaperProject]()
+    private(set) public var projects = [TaskPaperProject]()
     
-    func addProject(_ project: TaskPaperProject) {
+    public func addProject(_ project: TaskPaperProject) {
         projects.append(project)
     }
     
-    func project(at index: Int) -> TaskPaperProject? {
+    public func project(at index: Int) -> TaskPaperProject? {
         if projects.count > index {
             return projects[index]
         }
@@ -78,17 +78,17 @@ class TaskPaperElement: TaskPaperElementProtocol {
     
     // MARK: - Tasks
     
-    private(set) var tasks = [TaskPaperTask]()
+    private(set) public var tasks = [TaskPaperTask]()
     
-    func addTask(_ task: TaskPaperTask) {
+    public func addTask(_ task: TaskPaperTask) {
         tasks.append(task)
     }
     
     // MARK: - Notes
     
-    var notes = [TaskPaperNote]()
+    public var notes = [TaskPaperNote]()
     
-    func addNote(_ note: TaskPaperNote) {
+    public func addNote(_ note: TaskPaperNote) {
         notes.append(note)
     }
     

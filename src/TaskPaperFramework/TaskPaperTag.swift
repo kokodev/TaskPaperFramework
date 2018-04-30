@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct TaskPaperTag {
-    var title = ""
-    var values: [String]?
+public struct TaskPaperTag {
+    public var title = ""
+    public var values: [String]?
 }
