@@ -23,7 +23,7 @@ public class TaskPaperDocument {
     private let documentPath: String
     private let documentQueue = DispatchQueue(label: "de.kokodev.TaskPaper.TaskPaperDocument.Queue", qos: .background, attributes: .concurrent, autoreleaseFrequency: .inherit, target: nil)
     
-    init(taskPaperPath: String) {
+    public init(taskPaperPath: String) {
         documentPath = taskPaperPath
     }
     
