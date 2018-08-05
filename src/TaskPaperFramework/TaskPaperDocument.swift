@@ -13,18 +13,18 @@ public typealias EmptyCompletionHandler = ()->()
 
 public class TaskPaperDocument {
     
-    private(set) var projects = [TaskPaperProject]()
-    private(set) var tasks = [TaskPaperTask]()
-    private(set) var notes = [TaskPaperNote]()
-    private(set) var searches = [TaskPaperSearch]()
+    public private(set) var projects = [TaskPaperProject]()
+    public private(set) var tasks = [TaskPaperTask]()
+    public private(set) var notes = [TaskPaperNote]()
+    public private(set) var searches = [TaskPaperSearch]()
     
     private var outline: OutlineType?
     
-    private let documentPath: String
+    private let documentUrl: URL
     private let documentQueue = DispatchQueue(label: "de.kokodev.TaskPaper.TaskPaperDocument.Queue", qos: .background, attributes: .concurrent, autoreleaseFrequency: .inherit, target: nil)
     
-    public init(taskPaperPath: String) {
-        documentPath = taskPaperPath
+    public init(taskPaperPath: URL) {
+        documentUrl = taskPaperPath
     }
     
     public func load(completion: EmptyCompletionHandler?) {
@@ -35,11 +35,11 @@ public class TaskPaperDocument {
     }
     
     private func loadOutline(_ completion: EmptyCompletionHandler?) {
-        if let textContents = try? String(contentsOfFile: self.documentPath, encoding: .utf8)
+        if let textContents = try? String(contentsOf: self.documentUrl)
         {
             outline = BirchOutline.createTaskPaperOutline(textContents)
             guard let outline = self.outline else {
-                print("Failed to create outline from '\(self.documentPath)'")
+                print("Failed to create outline from '\(self.documentUrl)'")
                 completion?()
                 return
             }
@@ -54,7 +54,7 @@ public class TaskPaperDocument {
                 completion?()
             }
         } else {
-            print("Failed to get text content of '\(self.documentPath)'")
+            print("Failed to get text content of '\(self.documentUrl)'")
             completion?()
         }
     }

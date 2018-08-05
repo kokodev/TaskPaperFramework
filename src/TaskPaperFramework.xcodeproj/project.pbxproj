@@ -348,7 +348,7 @@
 				TargetAttributes = {
 					AE4341F320736664008DDC6F = {
 						CreatedOnToolsVersion = 9.3;
-						LastSwiftMigration = 0930;
+						LastSwiftMigration = 1000;
 					};
 					AE4341FC20736664008DDC6F = {
 						CreatedOnToolsVersion = 9.3;
@@ -678,7 +678,7 @@
 				PRODUCT_NAME = TaskPaper;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -703,7 +703,7 @@
 				PRODUCT_MODULE_NAME = "$(PRODUCT_NAME:c99extidentifier)";
 				PRODUCT_NAME = TaskPaper;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
